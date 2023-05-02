@@ -1,18 +1,11 @@
-import Garden.GardenManager;
-import Utils.ScenarioManager;
-import Utils.UserInput;
-
-import java.util.Scanner;
+import Garden.GardenPlanner;
 
 public class Main {
 
-    static ScenarioManager scenarioManager = new ScenarioManager();
-    static UserInput userInput = new UserInput();
-    GardenManager app = new GardenManager();
-
+    static GardenPlanner gardenPlanner = new GardenPlanner();
     public static void main(String[] args) {
-        scenarioManager.scenarioBuilder("GreetingScenario");
+
+        System.out.println("Welcome to Garden Planner!");
+        gardenPlanner.planGarden();
     }
-
-
 }
